@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/results" method="post">
+        {% csrf_token %}
+        <label for="name">Your Name:</label>
+        <input type="text" name="name" />
+        <label for="location">Your Loaction</label>
+        <select name="location">
+            <option value="kent">Kent</option>
+            <option value="Dupont">Dupont</option>
+            <option value="Seattle">Seattle</option>
+            <option value="Renton">Renton</option>
+        </select>
+        <label for="langauge">Favorite Langauge</label>
+        <select name="favorite">
+            <option value="Python">Python</option>
+            <option value="Javascript">Javascript</option>
+            <option value="C++">C++</option>
+            <option value="Other">Other</option>
+        </select>
+        <label name="comment">Share your Comment</label>
+        <textarea name="comment"></textarea>
+        <label name="gender">Gender</label>
+        <input type="radio" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" name="gender" value="other">
+        <label for="other">Other</label> 
+        <input type="submit" value="submit" />
+    </form>
+</body>
+</html>
