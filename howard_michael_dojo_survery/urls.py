@@ -17,4 +17,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path('', include('add_person.urls')),
+    path('', include('random_word.urls')),
 ]

@@ -8,10 +8,10 @@
 </head>
 <body>
     <h1>Submitted info:</h1>
-    <h3>Name: {{ name }}</h3>
-    <h3>Location: {{ location }}</h3>
-    <h3>Favorite Language: {{ favorite }}</h3>
-    <h3>Comments: {{ comment }}</h3>
-    <h3>Gender: {{ gender }}</h3>
+    <h3>Name: {{ request.session.name }}</h3>
+    <h3>Location: {{ request.session.location }}</h3>
+    <h3>Favorite Language: {{ request.session.favorite }}</h3>
+    <h3>Comments: {{ request.session.comment }}</h3>
+    <h3>Gender: {{ request.session.gender }}</h3>
 </body>
 </html>
